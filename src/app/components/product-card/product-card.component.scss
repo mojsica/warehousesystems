@@ -1,0 +1,8 @@
+.product-card {
+    margin: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.product-card:hover {
+    background-color: lightgrey;
+}

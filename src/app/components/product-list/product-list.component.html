@@ -1,0 +1,46 @@
+<div class="product-list-container" fxLayout="column">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="16px">
+
+        <!-- search card -->
+        <mat-card fxHide.xs fxLayout="column">
+            <mat-card-title fxLayout="row" fxLayoutAlign="space-between start">
+                <span>Search </span>
+                <mat-icon>search</mat-icon>
+            </mat-card-title>
+            <mat-card-content class="search-wrapper">
+                <!-- search form-->
+                <app-search-form></app-search-form>
+            </mat-card-content>
+        </mat-card>
+
+        <div fxLayout="column" class="product-list">
+            <!-- Action btns -->
+            <div fxLayout="row" fxLayoutAlign="end start" fxLayoutGap="8px" class="add-product-btn">
+                <button fxHide.xs mat-raised-button color="primary" (click)="onAddProduct()">
+                    Add Product
+                </button>
+                <button fxHide.gt-xs mat-mini-fab color="primary" (click)="onAddProduct()">
+                    <mat-icon>add</mat-icon>
+                </button>
+                <button fxHide.gt-xs mat-mini-fab color="primary" (click)="onOpenSearchProductsDialog()">
+                    <mat-icon>search</mat-icon>
+                </button>
+            </div>
+            
+            <app-error-display [errorMessage]="errorMessage"></app-error-display>
+
+            <!-- product cards -->
+            <div *ngIf="products$ | async as products" fxLayout="row wrap" fxLayoutAlign="align"
+                fxLayoutAlign.xs="center">
+                <app-product-card fxFlex="20" fxFlex.lg="25" fxFlex.md="50" fxFlex.sm="100" fxFlex.xs="100"
+                    *ngFor="let product of products" [product]="product" @showState>
+                </app-product-card>
+
+                <div fxLayoutAlign="center center" fxFlex="grow">
+                    <app-no-data *ngIf="products.length===0" title="No search results"></app-no-data>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

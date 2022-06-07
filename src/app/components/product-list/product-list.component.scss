@@ -1,0 +1,20 @@
+.product-list-container {
+    padding: 16px;
+
+    .search-wrapper {
+        width: 300px;
+        margin: 8px;
+    }
+
+    .add-product-btn {
+        position: sticky;
+        top: 72px;
+        z-index: 2000;
+        padding-bottom: 8px;
+        padding-right: 8px;
+    }
+
+    .product-list {
+        width: 100%;
+    }
+}

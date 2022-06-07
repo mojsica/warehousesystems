@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
+    <section class="info-text">
+        <h1> Wellcome to the Warehouse System</h1>
+        <p> Push your maintenance to the next level</p>
+    </section>
+    <section fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="32px">
+
+        <app-home-card title="Card list view" content="Products are placed as cards. Easily accessable."
+            (viewClicked)="onCardListView()">
+        </app-home-card>
+
+        <app-home-card title="Lorem Ipsum" content="Eque porro quisquam est qui dolorem ipsum quia dolor sit amet."
+            (viewClicked)="onCardListView()">
+        </app-home-card>
+
+        <app-home-card title="Vestibulum ipsum" content="Mis in faucibus orci luctus et ultrices posuere cubilia."
+            (viewClicked)="onCardListView()">
+        </app-home-card>
+
+    </section>
+</div>

@@ -1,0 +1,233 @@
+{
+  "products": [
+    {
+      "identifier": "MYTZ 123456",
+      "quantity": "1",
+      "sectionId": 6,
+      "floorId": 2,
+      "id": 0
+    },
+    {
+      "identifier": "MYT 1456",
+      "quantity": 12,
+      "sectionId": 2,
+      "floorId": 1,
+      "id": 1
+    },
+    {
+      "identifier": "SYT 1426",
+      "quantity": 123,
+      "sectionId": 6,
+      "floorId": 2,
+      "id": 2
+    },
+    {
+      "identifier": "SYT 726",
+      "quantity": 23,
+      "sectionId": 5,
+      "floorId": 2,
+      "id": 3
+    },
+    {
+      "identifier": "SYTQ 726",
+      "quantity": "23",
+      "sectionId": 4,
+      "floorId": 2,
+      "id": 4
+    },
+    {
+      "identifier": "SAAA 776",
+      "quantity": 23,
+      "sectionId": 8,
+      "floorId": 3,
+      "id": 5
+    },
+    {
+      "identifier": "SQQ 666",
+      "quantity": "11",
+      "sectionId": 9,
+      "floorId": 3,
+      "id": 6
+    },
+    {
+      "identifier": "AAA 666",
+      "quantity": "111",
+      "floorId": 3,
+      "sectionId": 8,
+      "id": 7
+    },
+    {
+      "identifier": "aasdf",
+      "quantity": "10",
+      "floorId": 2,
+      "sectionId": 6,
+      "id": 9
+    },
+    {
+      "identifier": "GGG 6546",
+      "quantity": "333",
+      "floorId": 2,
+      "sectionId": 5,
+      "id": 10
+    },
+    {
+      "identifier": "WW 7878",
+      "quantity": "1",
+      "floorId": 2,
+      "sectionId": 5,
+      "id": 11
+    },
+    {
+      "identifier": "QQQQ 123456",
+      "quantity": "33",
+      "floorId": 1,
+      "sectionId": 3,
+      "id": 12
+    },
+    {
+      "identifier": "GGG 231231",
+      "quantity": "23",
+      "floorId": 3,
+      "sectionId": 9,
+      "id": 13
+    },
+    {
+      "identifier": "BBBB 6546",
+      "quantity": "777777",
+      "floorId": 1,
+      "sectionId": 3,
+      "id": 14
+    },
+    {
+      "identifier": "DDDD 3333",
+      "quantity": "111",
+      "floorId": 1,
+      "sectionId": 2,
+      "id": 15
+    },
+    {
+      "identifier": "WWWW 5656",
+      "quantity": "2",
+      "floorId": 3,
+      "sectionId": 8,
+      "id": 16
+    },
+    {
+      "identifier": "SOME 212312",
+      "quantity": "100",
+      "floorId": 2,
+      "sectionId": 5,
+      "id": 17
+    },
+    {
+      "identifier": "SSSS 321321",
+      "quantity": "2",
+      "floorId": 2,
+      "sectionId": 5,
+      "id": 18
+    },
+    {
+      "identifier": "TTRR 132131",
+      "quantity": "2222",
+      "floorId": 3,
+      "sectionId": 7,
+      "id": 19
+    },
+    {
+      "identifier": "RRRR 343223",
+      "quantity": "222",
+      "floorId": 2,
+      "sectionId": 4,
+      "id": 20
+    },
+    {
+      "identifier": "JOSS 321321",
+      "quantity": "22",
+      "floorId": 2,
+      "sectionId": 5,
+      "id": 21
+    },
+    {
+      "identifier": "DSDS 2222",
+      "quantity": "97879",
+      "floorId": 2,
+      "sectionId": 4,
+      "id": 22
+    },
+    {
+      "identifier": "MMMM 998700",
+      "quantity": "100",
+      "floorId": 2,
+      "sectionId": 6,
+      "id": 23
+    },
+    {
+      "identifier": "MMMM 87687",
+      "quantity": "2",
+      "floorId": 1,
+      "sectionId": 1,
+      "id": 24
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "Section 1",
+      "floorId": 1
+    },
+    {
+      "id": 2,
+      "name": "Section 2",
+      "floorId": 1
+    },
+    {
+      "id": 3,
+      "name": "Section 3",
+      "floorId": 1
+    },
+    {
+      "id": 4,
+      "name": "Section 4",
+      "floorId": 2
+    },
+    {
+      "id": 5,
+      "name": "Section 5",
+      "floorId": 2
+    },
+    {
+      "id": 6,
+      "name": "Section 6",
+      "floorId": 2
+    },
+    {
+      "id": 7,
+      "name": "Section 7",
+      "floorId": 3
+    },
+    {
+      "id": 8,
+      "name": "Section 8",
+      "floorId": 3
+    },
+    {
+      "id": 9,
+      "name": "Section 9",
+      "floorId": 3
+    }
+  ],
+  "floors": [
+    {
+      "id": 1,
+      "name": "Floor 1"
+    },
+    {
+      "id": 2,
+      "name": "Floor 2"
+    },
+    {
+      "id": 3,
+      "name": "Floor 3"
+    }
+  ]
+}

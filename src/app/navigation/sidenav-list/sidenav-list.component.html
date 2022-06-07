@@ -1,0 +1,11 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+        (click)="onCloseSidenav()">
+        <mat-icon>home</mat-icon>
+        <span class="nav-caption">Home</span>
+    </a>
+    <a mat-list-item routerLink="/products" [routerLinkActive]="'active'" (click)="onCloseSidenav()">
+        <mat-icon>list</mat-icon>
+        <span class="nav-caption">Products</span>
+    </a>
+</mat-nav-list>

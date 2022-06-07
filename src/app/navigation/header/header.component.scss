@@ -1,0 +1,24 @@
+logo {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav-btns-wraper {
+    margin-right: 8px;
+
+    .nav-btn {
+        text-decoration: none;
+        color: white;
+        padding: 0 16px;
+        border-radius: 4px;
+    }
+
+    .nav-btn:hover,
+    .nav-btn.active {
+        background: rgba(0, 0, 0, .2);
+    }
+
+    .nav-btn.active {
+        cursor: default;
+    }
+}

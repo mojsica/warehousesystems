@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <span class="logo">WHS</span>
+
+    <div fxFlex fxLayoutAlign="end" fxLayoutGap="8px" fxHide.xs class="nav-btns-wraper">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-btn mat-button">
+            home
+        </a>
+        <a routerLink="/products" [routerLinkActive]="'active'" class="nav-btn mat-button">
+            products
+        </a>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,52 @@
+<app-spinner></app-spinner>
+<h1 mat-dialog-title>{{data ? "Edit product" : "Add product"}}</h1>
+
+<app-error-display [errorMessage]="errorMessage"></app-error-display>
+
+<form fxLayout="column" [formGroup]="srForm">
+
+    <!-- identifier -->
+    <mat-form-field appearance="outline">
+        <mat-label>Identifier</mat-label>
+        <input matInput formControlName="identifier">
+        <mat-error *ngIf="srForm.get('identifier')?.hasError('required')">You must enter identifier</mat-error>
+        <mat-error *ngIf="srForm.get('identifier')?.hasError('pattern')">Invalid format - example: MYTZ 123456
+        </mat-error>
+    </mat-form-field>
+
+    <!-- quantity -->
+    <mat-form-field appearance="outline">
+        <mat-label>Quantity</mat-label>
+        <input matInput formControlName="quantity">
+        <mat-error *ngIf="srForm.get('quantity')?.hasError('required')">You must enter quantity</mat-error>
+        <mat-error *ngIf="srForm.get('quantity')?.hasError('pattern')">Only positive integers are alowed</mat-error>
+    </mat-form-field>
+
+    <!-- floor -->
+    <mat-form-field appearance="outline">
+        <mat-label>Floor</mat-label>
+        <mat-select formControlName="floorId">
+            <mat-option *ngFor="let floor of floors$ | async" [value]=floor.id>
+                {{floor.name}}
+            </mat-option>
+        </mat-select>
+        <mat-error *ngIf="srForm.get('floorId')?.hasError('required')">You must make a selection</mat-error>
+    </mat-form-field>
+
+    <!-- section -->
+    <mat-form-field appearance="outline">
+        <mat-label>Section</mat-label>
+        <mat-select formControlName="sectionId">
+            <mat-option *ngFor="let section of selectedFloorSections$ | async" [value]=section.id>
+                {{section.name}}
+            </mat-option>
+        </mat-select>
+        <mat-error *ngIf="srForm.get('sectionId')?.hasError('required')">You must make a selection</mat-error>
+    </mat-form-field>
+
+    <!-- action btn -->
+    <button mat-raised-button [disabled]="srForm.invalid || !srForm.dirty" color="primary" (click)="onSubmit()">
+        {{data ? "Save" : "Submit"}}
+    </button>
+
+</form>
